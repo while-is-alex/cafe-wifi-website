@@ -37,6 +37,7 @@ From the home page, the user has the option of having a random café from the da
 
 ### Search by location
 From the top right corner of the page, the user has the option for searching by location. A page is returned containing all the cafés in that location.
+
 ![search-café.png](https://i.ibb.co/4F515N4/search.png)
 
 ### Adding a new café
@@ -59,4 +60,7 @@ This app requires the following:
 + Python 3
 + Flask
 + Flask-Bootstrap
-+ Playsound
++ Flask-SQLAlchemy
++ Flask-WTF
++ WTForms
++ python-dotenv
