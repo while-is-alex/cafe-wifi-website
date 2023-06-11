@@ -1,4 +1,4 @@
-# Coffe and Wi-Fi
+# Coffee and Wi-Fi
 A website built with Python and Flask for a SQL database for cafés. Project developed independently.
 
 ## Getting started
