@@ -4,7 +4,7 @@ A website built with Python and Flask for a SQL database for cafés. Project dev
 ## Getting started
 1. Clone the repository:
 ```
-git clone https://github.com/while-is-alex/morse-encoder-decoder.git
+git clone https://github.com/while-is-alex/cafe-wifi-website.git
 ```
 
 2. Change the directory to the project folder.
