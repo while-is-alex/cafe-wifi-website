@@ -1,0 +1,25 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Error{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet"
+      href="{{ url_for('.static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <div class="container">
+        {% if location or id: %}
+            <h1 class="display-4">Not found</h1>
+            {% if location: %}
+            <p class="lead">Sorry, we don't have a café at that location.</p><br>
+            {% elif id: %}
+            <p class="lead">Sorry, a café with that id was not found in the database.</p><br>
+            {% endif %}
+        {% endif %}
+        <a class="btn btn-warning btn-lg" href="{{ url_for('cafes') }}" role="button">Go back</a>
+    </div>
+</div>
+{% endblock %}

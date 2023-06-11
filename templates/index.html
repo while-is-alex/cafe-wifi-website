@@ -1,0 +1,22 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Coffee and Wifi{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet"
+      href="{{ url_for('.static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">Coffee and Wi-Fi ☕️</h1>
+        <p class="lead">A database for working from cafés</p>
+        <hr class="my-4">
+        <p>Here you can find information about cafés such as their Wi-Fi availability, power socket availability, coffee price and more.</p><br>
+        <a class="btn btn-warning btn-lg" href="{{ url_for('cafes') }}" role="button">See the database</a><br>
+        <a class="btn btn-link btn-lg" href="{{ url_for('get_random_cafe') }}" role="button">or find a random café</a>
+    </div>
+</div>
+{% endblock %}
