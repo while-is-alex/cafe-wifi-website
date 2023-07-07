@@ -12,7 +12,7 @@ git clone https://github.com/while-is-alex/cafe-wifi-website.git
 3. Create a virtual environment and activate it:
 ```
 py -m venv venv
-source tutorial-env/bin/activate
+source venv/bin/activate
 ```
 
 4. Install the required packages:
